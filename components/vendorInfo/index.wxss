@@ -1,0 +1,23 @@
+.card-box {
+    margin: -40rpx auto 0 auto;
+    background: #fff;
+    padding: 16rpx 12rpx;
+    border-radius: 8px;
+    box-shadow:2px 2px 3px #eee;
+}
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+.content,
+.contact,
+.phone {
+    margin: 3px 0;
+    font-size: 16px;
+    color: #999;
+}
+.content text,
+.contact text,
+.phone text {
+    padding-left: 5px;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "vendor-info": "../../components/vendorInfo/index",
+    "customer": "../../components/customer/index",
+    "footer": "../../components/footer/index"
+  }
+}

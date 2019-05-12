@@ -1,0 +1,15 @@
+<view class="card-box">
+    <view class="title">{{title}}</view>
+    <view class="content">
+        <i class="icon-class1" />
+        <text>{{content}}</text>
+    </view>
+    <view class="contact">
+        <i class="icon-class2" />
+        <text>{{name}}</text>
+    </view>
+    <view class="phone">
+        <i class="icon-class3" />
+        <text>{{phone}}</text>
+    </view>
+</view>

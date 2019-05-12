@@ -1,0 +1,18 @@
+<view class="customer-box">
+    <view class="customer">
+        <view class="creator">
+            <view class="user">
+                <image bindtap="bindViewTap" class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+                <view class="nickname">{{userInfo.nickName}}</view>
+            </view>
+            <view class="right">
+                <view>{{description}}</view>
+            </view>
+        </view>
+        <progress class="progress" percent="40" stroke-width="12" font-size="14" active-mode="forwards" border-radius="8" show-info />
+        <view class="participant">
+            <image class="participant-avatar" wx:for="{{list}}" wx:key="{{item.id}}" wx:for-item="item" src="{{item.avatarUrl}}" mode="cover"></image>
+        </view>
+    </view>
+    <!-- <image class="background" src="../../assets/img/border.png" mode="scaleToFill" /> -->
+</view>

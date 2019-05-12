@@ -1,0 +1,16 @@
+/**app.wxss**/
+@import "/assets/icon/iconfont.wxss";
+page {
+  position: relative;
+  min-height: 100%;
+  /* background: rgba(6, 193, 174, 0.2); */
+  background: linear-gradient(to right, rgba(6, 193, 174, 0.1), rgba(6, 193, 174, 0.4));
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}

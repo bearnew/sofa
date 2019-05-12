@@ -1,0 +1,8 @@
+<view class="wrapper">
+    <view class="item">
+        <button class="share" data-name="shareBtn" open-type="share">我要分享</button>
+    </view>
+    <view class="item">
+        <view class="praise" bindtap="praise">为他点赞</view>
+    </view>
+</view>
