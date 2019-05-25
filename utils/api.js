@@ -1,15 +1,14 @@
 // const baseUrl = 'http://www.sddsqt.com';
 const baseUrl = 'http://127.0.0.1:1225';
-import Storage from './storage';
+import { tokenStore } from './store';
 
 const http = ({ url = '', param = {}, ...other } = {}) => {
     wx.showLoading({
         title: '请求中，请耐心等待..'
     });
-    let timeStart = Date.now();
-    const tokenStore = Storage.getInstance('token', true);
-    console.log(tokenStore.get())
+    // let timeStart = Date.now();
 
+    console.log('sssssss', url, param)
     return new Promise((resolve, reject) => {
         wx.request({
             url: getUrl(url),
@@ -48,6 +47,7 @@ const get = (url, param = {}) => {
 }
 
 const post = (url, param = {}) => {
+    console.log(url, param)
     return http({
         url,
         param,
@@ -70,6 +70,15 @@ const put = (url, param = {}) => {
 //         method: 'put'
 //     })
 // }
+
+export const apiUrl = {
+    login: '/login',
+    getShareUserInfo: '/getShareUserInfo',
+    createOrder: '/createOrder',
+    getOrderId: '/getOrderId',
+    praise: '/praise',
+    getLikesAvatar: '/getLikesAvatar'
+}
 
 export default {
     get,
