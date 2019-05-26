@@ -9,7 +9,10 @@
                 <view>我发现了一个超棒的沙发定制商家，请为我点赞</view>
             </view>
         </view>
-        <progress class="progress" percent="40" stroke-width="12" font-size="14" active-mode="forwards" border-radius="8" show-info />
+        <view class="progress-wrap">
+            <progress class="progress" percent="{{avatars.length * 5}}" stroke-width="12" font-size="14" active-mode="forwards" border-radius="8" />
+            <view class="progress-number">{{avatars.length}} / 20</view>
+        </view>
         <view class="participant">
             <image class="participant-avatar" wx:for="{{avatars}}" wx:key="{{index}}" wx:for-item="item" src="{{item}}" mode="cover"></image>
         </view>

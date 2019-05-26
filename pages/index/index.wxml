@@ -1,8 +1,6 @@
 <!-- index.wxml -->
 <view class="container">
-    <view class="banner-wrapper">
-        <image class="banner" src="{{banner}}" mode="aspectFill" />
-    </view>
+    <swiper />
     <vendor-info class="vendor" icon-class1="iconfont iconshujufenxi-jingyinggaikuang" icon-class2="iconfont iconlianxirenweixuanzhong" icon-class3="iconfont iconshoujihaoma" />
     <customer class="customer" shareUserInfo="{{shareUserInfo}}" avatars="{{avatars}}" />
     <view class="occupy-space"></view>

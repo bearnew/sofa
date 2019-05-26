@@ -1,0 +1,14 @@
+<view class="swiper-wrapper">
+    <swiper class="swiper" bindchange="swiperChange" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item bind:tap="loadAd" data-index="{{index}}">
+                <image src="{{item}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="dot-wrapper">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <view class="dot {{index == currentSwiper ? 'active' : ''}}"></view>
+        </block>
+    </view>
+</view>

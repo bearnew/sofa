@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "swiper": "../../components/swiper/index",
     "vendor-info": "../../components/vendorInfo/index",
     "customer": "../../components/customer/index",
     "footer": "../../components/footer/index"

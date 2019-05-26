@@ -1,4 +1,5 @@
 .card-box {
+    position: relative;
     margin: -40rpx auto 0 auto;
     background: #fff;
     padding: 16rpx 12rpx;
