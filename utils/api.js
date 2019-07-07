@@ -1,5 +1,6 @@
 // const baseUrl = 'http://www.sddsqt.com';
-const baseUrl = 'http://127.0.0.1:1225';
+const baseUrl = 'http://localhost:3000';
+
 import { tokenStore } from './store';
 
 const http = ({ url = '', param = {}, ...other } = {}) => {
